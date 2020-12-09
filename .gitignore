@@ -133,3 +133,5 @@ dmypy.json
 static/
 
 .idea/
+
+django_cache/

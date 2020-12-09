@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'news.apps.NewsConfig',
+    'testapp.apps.TestappConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,7 +43,8 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'ckeditor',
     'ckeditor_uploader',
-    'captcha'
+    'captcha',
+    'mptt'
 ]
 
 MIDDLEWARE = [
@@ -156,3 +158,5 @@ CACHES = {
         'LOCATION': os.path.join(BASE_DIR, 'django_cache'),
     }
 }
+
+MPTT_ADMIN_LEVEL_INDENT = 20

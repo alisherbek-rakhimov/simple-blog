@@ -21,6 +21,7 @@ import debug_toolbar
 
 urlpatterns = [
     path('', include('news.urls')),
+    path('test/', include('testapp.urls')),
     path('__debug__/', include(debug_toolbar.urls)),
     path('admin/', admin.site.urls),
     re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
