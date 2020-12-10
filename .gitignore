@@ -130,7 +130,7 @@ dmypy.json
 
 
 # Django
-static/
+static
 
 .idea/
 
