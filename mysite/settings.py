@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'c8j_c%rqb-77o&7mdis*eog^xw0+l^t+y7ipkf08)o9zs(8(65'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['159.65.127.208']
+ALLOWED_HOSTS = ['159.65.127.208', '127.0.0.1']
 
 # Application definition
 
@@ -142,7 +142,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 STATICFILES_DIRS = [
     BASE_DIR / 'mysite/static',
